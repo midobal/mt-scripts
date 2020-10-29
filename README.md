@@ -14,6 +14,9 @@
 ## Moses
 * [Moses Scripts](moses): A copy of the scripts included with [Moses](https://github.com/moses-smt/mosesdecoder).
 
+## Plotting
+* [Scatter Plotting](scaplo): a tool for plotting BLEU values of different systems.
+
 ## Statistical Dictionary
 * [Statistical Dictionary](https://github.com/midobal/sd): translates a text using an statistical dictionary.
 
