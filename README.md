@@ -14,6 +14,9 @@
 ## Moses
 * [Moses Scripts](moses): A copy of the scripts included with [Moses](https://github.com/moses-smt/mosesdecoder).
 
+## Statistical Dictionary
+* [Statistical Dictionary](https://github.com/midobal/sd): translates a text using an statistical dictionary.
+
 ## Statistical Significance
 * [Approximate Randomization Testing](art): Assesses the statistical significance of the difference in performance between two systems.
 * [Bootstrap Resampling](confinter): Computes several metrics with their confidence interval using bootstrap resampling.
