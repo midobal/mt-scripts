@@ -6,6 +6,7 @@
 * [Translation Error Rate](ter): Computes TER.
 
 ## Moses
+* [Moses Scripts](moses): A copy of the scripts included with [Moses](https://github.com/moses-smt/mosesdecoder).
 
 ## Statistical Significance
 * [Approximate Randomization Testing](art): Assesses the statistical significance of the difference in performance between two systems.
