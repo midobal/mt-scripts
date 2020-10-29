@@ -20,3 +20,6 @@
 ## Statistical Significance
 * [Approximate Randomization Testing](art): Assesses the statistical significance of the difference in performance between two systems.
 * [Bootstrap Resampling](confinter): Computes several metrics with their confidence interval using bootstrap resampling.
+
+## Tokenization
+* [Tokenizer](https://github.com/midobal/tokenizer): this tool provides several methods for de/tokenizing a sentence.
