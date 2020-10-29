@@ -8,21 +8,24 @@
 * [Vocabulary](vocab): returns a document's vocabulary.
 
 ## Metrics
-* [Translation Error Rate](ter): Computes TER.
-* [Word Error Rate](wer): Computes WER.
+* [Translation Error Rate](ter): computes TER.
+* [Word Error Rate](wer): computes WER.
 
 ## Moses
-* [Moses Scripts](moses): A copy of the scripts included with [Moses](https://github.com/moses-smt/mosesdecoder).
+* [Moses Scripts](moses): a copy of the scripts included with [Moses](https://github.com/moses-smt/mosesdecoder).
 
 ## Plotting
 * [Scatter Plotting](scaplo): a tool for plotting BLEU values of different systems.
+
+## Quality Estimation
+* [Quality Estimation Tagger](https://github.com/midobal/qet): generates word-level/phrase-level QE tags for a given translated text and its post-edited version.
 
 ## Statistical Dictionary
 * [Statistical Dictionary](https://github.com/midobal/sd): translates a text using an statistical dictionary.
 
 ## Statistical Significance
-* [Approximate Randomization Testing](art): Assesses the statistical significance of the difference in performance between two systems.
-* [Bootstrap Resampling](confinter): Computes several metrics with their confidence interval using bootstrap resampling.
+* [Approximate Randomization Testing](art): assesses the statistical significance of the difference in performance between two systems.
+* [Bootstrap Resampling](confinter): computes several metrics with their confidence interval using bootstrap resampling.
 
 ## Tokenization
 * [Tokenizer](https://github.com/midobal/tokenizer): this tool provides several methods for de/tokenizing a sentence.
