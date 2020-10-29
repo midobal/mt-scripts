@@ -4,6 +4,7 @@
 
 ## Metrics
 * [Translation Error Rate](ter): Computes TER.
+* [Word Error Rate](wer): Computes WER.
 
 ## Moses
 * [Moses Scripts](moses): A copy of the scripts included with [Moses](https://github.com/moses-smt/mosesdecoder).
