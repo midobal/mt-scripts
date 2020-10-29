@@ -3,6 +3,7 @@
 ## Corpora
 
 ## Metrics
+* [Translation Error Rate](ter): Computes TER.
 
 ## Moses
 
