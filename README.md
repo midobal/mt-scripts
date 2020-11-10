@@ -5,6 +5,7 @@
 * [Levenshtein Filtering](levfil): filters sentences from a parallel file whose normalized edit distance is greater than 0.07.
 * [Parallel Shuffling](pashu): shuffles two parallel files.
 * [Repeated Lines](rl): removes repeated lines from a file.
+* [TMX Reader](tmx): reads a file in tmx format.
 * [Vocabulary](vocab): returns a document's vocabulary.
 
 ## Metrics
