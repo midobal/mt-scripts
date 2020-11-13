@@ -1,6 +1,12 @@
 # Levenshtein Filtering
 This repository contains a script for filtering sentences from a parallel file whose normalized edit distance is greater than 0.07.
 
+## Requirements
+This script makes use of the library *distance*, which can be installed through pip:
+```
+pip install Distance
+```
+
 ## Data Preparation
 The script needs the parallel files to be in a single file, with each sentence separated by a tab. You can generate this file by doing:
 ```
