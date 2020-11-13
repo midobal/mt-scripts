@@ -1,6 +1,7 @@
 # MT Scripts
 
 ## Corpora
+* [Average Sentence Length](asl): computes the average number of words per sentence.
 * [Common Lines](cl): returns the common lines between two files.
 * [Levenshtein Filtering](levfil): filters sentences from a parallel file whose normalized edit distance is greater than 0.07.
 * [Parallel Shuffling](pashu): shuffles two parallel files.
