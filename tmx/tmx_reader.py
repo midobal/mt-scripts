@@ -58,10 +58,8 @@ if __name__ == '__main__':
         for tag in segment:
             if tag.tag == 'tuv':
                 if args.source in tag.attrib.values():
-                    src.write(tag[find_segment(tag)].text.encode('utf8')
-                              + '\n')
+                    src.write(tag[find_segment(tag)].text + '\n')
                 elif args.target in tag.attrib.values():
-                    tgt.write(tag[find_segment(tag)].text.encode('utf8')
-                              + '\n')
+                    tgt.write(tag[find_segment(tag)].text + '\n')
     src.close()
     tgt.close()
