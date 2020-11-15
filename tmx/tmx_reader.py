@@ -1,7 +1,23 @@
 #!/usr/bin/env python
 import argparse
 import sys
-from translate.storage.tmx import tmxfile
+import xml.etree.ElementTree as ET
+
+
+def find_segment(tag):
+    for n in range(len(tag)):
+        if tag[n].tag == 'seg':
+            return n
+    sys.stderr.write('Error: segment not found.\n')
+    sys.exit(-1)
+
+
+def find_body(root):
+    for n in range(len(root)):
+        if root[n].tag == 'body':
+            return n
+    sys.stderr.write('Error parsing tmx.\n')
+    sys.exit(-1)
 
 
 def parse_args():
@@ -26,9 +42,8 @@ if __name__ == '__main__':
     args = parse_args()
 
     try:
-        with open(args.file, 'rb') as f:
-            tmx_file = tmxfile(f, args.source, args.target)
-    except OSError:
+        tree = ET.parse(args.file)
+    except IOError:
         sys.stderr.write('Error: ' + args.file + ' does not exist.\n')
         sys.exit(-1)
     except SyntaxError:
@@ -37,18 +52,16 @@ if __name__ == '__main__':
 
     src = open(args.name + '.src', 'w')
     tgt = open(args.name + '.tgt', 'w')
-    for node in tmx_file.unit_iter():
-        try:
-            src.write(node.gettarget(lang=args.source) + '\n')
-        except TypeError:
-            sys.stderr.write('Error: ' + args.source
-                             + ' language not in file.\n')
-            sys.exit(-1)
-        try:
-            tgt.write(node.gettarget(lang=args.target) + '\n')
-        except TypeError:
-            sys.stderr.write('Error: ' + args.target
-                             + ' language not in file.\n')
-            sys.exit(-1)
+    root = tree.getroot()
+    body = root[find_body(root)]
+    for segment in body:
+        for tag in segment:
+            if tag.tag == 'tuv':
+                if args.source in tag.attrib.values():
+                    src.write(tag[find_segment(tag)].text.encode('utf8')
+                              + '\n')
+                elif args.target in tag.attrib.values():
+                    tgt.write(tag[find_segment(tag)].text.encode('utf8')
+                              + '\n')
     src.close()
     tgt.close()

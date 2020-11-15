@@ -1,12 +1,6 @@
 # Translation Memory eXchange Reader
 This repo contains a simple script for extracting source and target sentences from a tmx file.
 
-## Requirements
-`translate-toolkit` is needed to use this script. It can be install through pip:
-```
-pip install translate-toolkit
-```
-
 ## Usage
 ```
 tmx_reader.py [-h] -f file -s src_language -t tgt_language -n
