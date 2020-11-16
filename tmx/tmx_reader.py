@@ -25,7 +25,7 @@ def parse_args():
                                      source and target sentences from \
                                      a tmx file.')
     parser.add_argument('-f', '--file', metavar='file', required=True,
-                        help='tmx file from which to extrac the sentences.')
+                        help='tmx file from which to extract the sentences.')
     parser.add_argument('-s', '--source', metavar='src_language',
                         required=True, help='source language.')
     parser.add_argument('-t', '--target', metavar='tgt_language',

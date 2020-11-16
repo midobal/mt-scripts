@@ -10,7 +10,7 @@ This script extracts source and target sentences from a tmx file.
 
 optional arguments:
   -h, --help            show this help message and exit
-  -f file, --file file  tmx file from which to extrac the sentences.
+  -f file, --file file  tmx file from which to extract the sentences.
   -s src_language, --source src_language
                         source language.
   -t tgt_language, --target tgt_language
