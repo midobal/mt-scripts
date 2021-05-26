@@ -10,7 +10,7 @@ you can perform a test by running the following command:
 python approximate_randomization.py system1 system2 {repetitions}
 ```
 
-where `system1` and `system2` are the scores achieved by each systems (see [input format](#input-format) for details about the format) and `repetitions` is the number of trials to compute (default: 10000).
+where `system1` and `system2` are the scores achieved by each systems (see [input format](#input-format) for details about the format) and `repetitions` is the number of trials to compute (default: 10000; for a p-value of 0.05).
 
 ## Input Format
 We assume that we want to check the statistical significance of the
